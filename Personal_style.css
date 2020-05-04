@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	Box-sizing: border-box;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+
+
+
+.wrap{
+
+	margin: 0 auto;
+}
+
+
+
+.Header {
+	background-image: url('resources/banner.png');
+	background-position: center center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+	height: 960px;
+	border: 1px solid #707070;
+	opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerContent{
+	color: white;
+	font-family: Roboto;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 42px;
+}
+
+.largeFont{
+	font-family: Roboto, sans-serif;
+	font-style: black-italic;
+	font-size: 80px;
+	line-height: 94px;
+	margin-bottom: 32px;
+	width: 308px;
+}
+.headerContent p{
+	padding-left: 15px;
+	margin-bottom: 48px;
+}
+.contactIcon{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 308px;
+	padding: 0 10px 0 10px;
+}
+.contactIcon img{
+	display: block;
+	width: 60px;
+	height: 60px;
+}
+
+.sectionAbout{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: roboto, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 24px;
+	line-height: 42px;
+}
+.sectionAbout h2{
+	font-size: 64px;
+	line-height: 75px;
+	font-weight: medium;
+	font-style: italic;
+	margin-top: 64px;
+	margin-bottom: 40px;
+}
+.joannePhoto{
+	width: 384px;
+	height:100%;
+	margin-bottom: 24px;
+}
+.sectionAbout p{
+	margin-bottom: 8px;
+}
+
+.department{
+	text-align: center;
+	margin-bottom: 12px;
+}
+.sectionAbout ul{
+	width: 384px;
+	border-top: 1px solid #000;
+	padding-top: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.sectionAbout li{
+	margin-bottom: 20px;
+}
+.sectionAbout li::Before{
+	content:"";
+    display: inline-block;
+    background-color: #891818;
+    width: 22px;
+    height: 22px;
+	border-radius: 50% ;
+	margin-right: 16px;
+}
+
+.sectionBrand{
+	margin-top: 36px;
+	/*margin-bottom: 361px;*/
+
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: roboto ,sans-serif;
+	font-style: italic;
+	font-weight: medium;
+	color:#ffffff;
+	background-color: #000000;
+}
+.sectionBrand h3{
+	margin-top: 64px;
+	margin-bottom: 16px;
+	font-size: 64px;
+	line-height: 75px;
+}
+.sectionBrand p{
+	margin-bottom: 32px;
+	font-size: 24px;
+	line-height: 42px;
+}
+.sectionBrand ul{
+	margin-bottom: 48px;
+}
+.sectionBrand li{
+	font-family: Microsoft JhengHei, serif;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 42px;
+	text-align: center;
+}
+.brandImg1{
+	margin-bottom: 40px;
+	width: 792px;
+	height: 100%;
+}
+.imgBox{
+	margin-bottom: 160px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1200px;
+}
+.sectionOther{
+	padding-bottom: 106px;
+	max-width:1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sectionOtherBackground{
+	position: absolute;
+	z-index: -1;
+	top:3810px;
+	padding-top: 361px;
+	background-image: url('resources/photo-1561291386-5be50364cfb5.png');
+	background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+	height: 1558px;
+}
+.sectionOther h4{
+	font-family: roboto,sans-serif;
+	font-style: italic;
+	font-weight: medium;
+	margin-top: 64px;
+	margin-bottom: 24px;
+	font-size: 64px;
+	line-height: 75px;
+	text-align: center;
+}
+.sectionOther p{
+	margin-bottom: 48px;
+	font-family: Microsoft JhengHei,sans-serif;
+	font-size: 20px;
+	line-height: 42px;
+	text-align: center;
+}
+.sectionOther ul{
+	width: 1200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 16px;
+}
+.workImgText{
+	margin-bottom: 40px;
+	font-family: Microsoft JhengHei,sans-serif;
+	font-size: 20px;
+	line-height: 42px;
+	color:#ffffff;
+}
+.Footer{
+	padding-top: 64px;
+	padding-bottom: 64px;
+
+	margin: 0  auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: roboto, sans-serif;
+	font-style: italic;
+	font-weight: medium;
+}
+.Footer h5{
+	margin-bottom: 16px;
+	font-size: 64px;
+	line-height: 75px;
+}
+.Footer p{
+	margin-bottom: 16px;
+	font-size: 24px;
+	line-height: 36px;
+
+}
